@@ -1,0 +1,18 @@
+   fileName: akaratKey
+****sourceFile***** 
+   pass: spectraAkarat
+*****Key*****
+Alias: maymanm
+pass: spectraAkarat
+
+--------------------------------------
+***********| Tahil |***********
+*******| keyStore Password --> nassar |********
+
+*******| keyStore alias --> tkmsoft   |********
+
+	***************************************
+------------------------------------------------------------------------------------------------
+Hoor:
+password all : maymanm.
+alias: tkmsoft.

@@ -60,4 +60,18 @@
         mainViewsCallBack = null;
         super.onDetach();
     }
+	
+	 private void fireBackButtonEvent() {
+        try {
+            ((MainActivity) Objects.requireNonNull(getActivity())).setOnBackPressedListener(new BaseBackPressedListener(getActivity()) {
+                @Override
+                public void onBackPressed() {
+                    moveToFragment.moveInMain(new HomeFragment());
+                }
+            });
+        } catch (Exception exc) {
+            exc.printStackTrace();
+        }
+    }//end back pressed
+	
 }

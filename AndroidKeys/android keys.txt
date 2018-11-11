@@ -16,3 +16,7 @@ pass: spectraAkarat
 Hoor:
 password all : maymanm.
 alias: tkmsoft.
+============================
+E5tar sa7:
+pass all : maymanm
+alias: spectraapps.

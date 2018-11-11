@@ -1,15 +1,17 @@
 
     private FragmentActivity mContext;
-    ListSharedPreference listSharedPreference;
+    private ListSharedPreference listSharedPreference;
     private MainViewsCallBack mainViewsCallBack;
 
+    private ConnectionDetector connectionDetector;
+    private MoveToFragment moveToFragment;
     public LoginFragment() {
         // Required empty public constructor
     }
 
     @Override
     public void onAttach(Context context) {
-        if (context instanceof FragmentActivity) {
+         if (context instanceof FragmentActivity) {
             mContext = (FragmentActivity) context;
         }
         moveToFragment = new MoveToFragment(mContext);
@@ -21,9 +23,7 @@
             throw new ClassCastException(context.toString() + "error");
         }
         connectionDetector = new ConnectionDetector(context);
-        listSharedPreference = new ListSharedPreference(context.getApplicationContext());
-        mainViewsCallBack.serToolbarTitle(getString(R.string.products));
-    }
+        listSharedPreference = new ListSharedPreference(context.getApplicationContext());    }
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {

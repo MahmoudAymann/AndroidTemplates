@@ -24,3 +24,7 @@ alias: spectraapps.
 TaahelTrade:
 pass all : maymanm
 alias: taaheltrade
+======================
+myspare:
+pass: maymanm
+alias: myspare

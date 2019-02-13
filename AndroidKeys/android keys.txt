@@ -1,9 +1,22 @@
+------------------------
+signingConfigs {
+        config {
+            keyAlias 'tkmsoft'
+            keyPassword 'maymanm'
+            storeFile file('C:/Users/Karim/Desktop/hoor/app/hoorKey.jks')
+            storePassword 'maymanm'
+        }
+    }
+
+--------------
+
    fileName: akaratKey
 ****sourceFile***** 
    pass: spectraAkarat
 *****Key*****
 Alias: maymanm
 pass: spectraAkarat
+------------------------
 
 --------------------------------------
 ***********| Tahil |***********
